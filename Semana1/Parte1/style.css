@@ -41,6 +41,7 @@ nav a:hover {
 
 #banner img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .principal {
@@ -48,18 +49,22 @@ nav a:hover {
     padding: 30px 0;
     width: 940px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .titulo-centralizado {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 p {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #missao {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 em strong {
@@ -88,6 +93,8 @@ em strong {
 
 .imagem-beneficios {
     width: 50%;
+    margin-left: 137px;
+    border-radius: 10px;
 }
 
 footer {
@@ -101,3 +108,4 @@ footer {
     font-size: 13px;
     margin: 20px 0 0;
 }
+
