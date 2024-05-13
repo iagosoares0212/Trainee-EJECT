@@ -1,5 +1,13 @@
 body {
-    font-family: Arial;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+}
+
+.cabecalho {
+    background: #f7f7f7;
+}
+
+h1 {
+    margin-top: 50px;
+    display:inline-block;
 }
