@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    margin: 0px;
+}
+
+header {
+    background: #f7f7f7;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+.lista-secoes{
+    text-align: center;
+    text-decoration: none;
+    margin: 50px;
+}
+
+.lista-secoes li{
+    display: inline-block;
+
+}
+
+.lista-secoes li a{
+    text-decoration: none;
+}
+
