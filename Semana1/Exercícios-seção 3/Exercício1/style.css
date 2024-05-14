@@ -48,7 +48,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 150px;
+    margin:0 200px;
     max-width: 1000px;
 }
 
@@ -87,13 +87,22 @@ h2 {
     display: flex;
 }
 
-.vantagens-bikcraft {
+.vantagens-bikcraft1 {
     background: #f7f7f7;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.vantagens-bikcraft h2 {
+.vantagens-bikcraft1 h2 {
     font-size: 64px;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+    margin-left: 0px;
+}
+
+.vantagens-bikcraft2 {
+    background: white;
 }
