@@ -3,11 +3,97 @@ body {
     margin: 0px;
 }
 
-.cabecalho {
+header {
     background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;    
 }
 
 h1 {
-    margin-top: 50px;
-    display:inline-block;
+    margin-top: 60px;
+    font-weight: 800;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin-bottom: 80px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    color: #000;
+}
+
+.bikcraft {
+    width: 50%;
+}
+
+main {
+    background: #f7f7f7;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+    max-width: 1000px;
+}
+
+.parte1{
+    display: flex;
+}
+
+.bicicletas-feitas-a-mao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: white;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Top Right Bottom Left*/
+
+h2 {
+    margin: 0;
+}
+
+.bicicletas-feitas-a-mao a{
+    text-decoration: none;
+    background: #ee2211;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+}
+
+.parte2{
+    display: flex;
+}
+
+.vantagens-bikcraft {
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vantagens-bikcraft h2 {
+    font-size: 64px;
 }
