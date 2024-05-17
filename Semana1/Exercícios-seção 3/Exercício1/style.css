@@ -57,6 +57,7 @@ main {
 
 .parte1{
     display: flex;
+    position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
 }
 
 .bicicletas-feitas-a-mao {
@@ -66,7 +67,20 @@ main {
     background: white;
     justify-content: center;
     padding: 0px 20px;
+    position: relative; /* Necessário para que o posicionamento absoluto do pseudo-elemento funcione */
 }
+
+.bicicletas-feitas-a-mao::before {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 4px;
+    background-color: #ee2211; 
+    position: absolute;
+    top: 20px;
+    right: -25px;
+}
+
 
 p {
     font-size: 20px;
