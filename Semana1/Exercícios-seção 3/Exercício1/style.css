@@ -66,6 +66,7 @@ main {
     align-items: flex-end;
     background: white;
     justify-content: center;
+    width: 50%;
     padding: 0px 20px;
     position: relative; /* Necessário para que o posicionamento absoluto do pseudo-elemento funcione */
 }
@@ -120,9 +121,11 @@ h2 {
 }
 
 .vantagens-bikecraft2 {
+    box-sizing: border-box;
     background: white;
     width: 50%;
-    padding: 50px;
+    padding: 50px 50px;
+    
 }
 
 .vantagens-bikecraft2 h3 {
@@ -136,12 +139,17 @@ h2 {
 }
 
 .vantagens-bikecraft2 p {
-    margin-top: 10px;
     margin-left:50px;
-    margin-bottom: 50px;
 }
 
 footer p{
     text-align: center;
     padding: 20px 0;
+}
+
+@media (max-width: 1115px) {
+    .bikcraft {
+        object-fit: cover;
+         /* Para garantir que a imagem se ajuste bem ao contêiner */
+    }
 }
