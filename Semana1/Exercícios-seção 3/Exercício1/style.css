@@ -42,8 +42,10 @@ h1 {
 
 }
 
+
 .bikcraft {
     width: 50%;
+    object-fit: cover;
 }
     
 
@@ -186,11 +188,13 @@ footer p {
     width: auto;
 }
 
-@media (max-width: 1115px){
+@media (max-width: 1250px){
 
-    .vantagens-bikcraft1 h2 {
-        font-size: 2.5rem;
-        text-align: center;
-        padding: 40px 0;
+    .parte1 {
+        flex-direction: column;
+    }
+
+    .parte2 {
+        flex-direction: column;
     }
 }
