@@ -42,7 +42,6 @@ h1 {
 
 }
 
-
 .bikcraft {
     width: 50%;
     object-fit: cover;
@@ -58,7 +57,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 200px;
+    margin: 0 150px;
 }
 
 .parte1{
@@ -189,12 +188,19 @@ footer p {
 }
 
 @media (max-width: 1250px){
-
-    .parte1 {
+    .parte2 {
         flex-direction: column;
     }
 
-    .parte2 {
-        flex-direction: column;
+    .vantagens-bikcraft1 {
+        align-self: center;
+    }
+
+    .conteudo-principal {
+        margin:auto;
+    }
+
+    .vantagens-bikecraft2 {
+        width: auto;
     }
 }
