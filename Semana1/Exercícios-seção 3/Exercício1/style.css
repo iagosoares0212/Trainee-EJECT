@@ -198,9 +198,74 @@ footer p {
 
     .conteudo-principal {
         margin:auto;
+        align-items: normal;
+    }
+
+    .vantagens-bikcraft1 {
+        width: auto;
     }
 
     .vantagens-bikecraft2 {
         width: auto;
+    }
+
+    .vantagens-bikcraft1 h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+
+    h1 {
+       margin: 10px; 
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .menu {
+        width: auto;
+        flex-wrap: wrap;
+        gap: 55px;
+        justify-content: center;
+    }
+
+    .parte1 {
+        flex-direction: column;
+    }
+
+    .bicicletas-feitas-a-mao {
+        width: auto;
+        padding: 50px;
+        align-items: flex-start;
+    }
+
+    .bicicletas-feitas-a-mao::before {
+        display: none;
+    }
+
+    .bicicletas-feitas-a-mao p {
+        text-align: left;
+    }
+
+    .bikcraft {
+        width: auto;
+    }
+
+    .vantagens-bikcraft1 h2 {
+        font-size: 3.5rem;
+    }
+ 
+}
+
+@media (max-width: 500px){
+    
+    .vantagens-bikcraft1 h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
