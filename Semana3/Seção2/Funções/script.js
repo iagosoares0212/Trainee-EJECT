@@ -177,6 +177,12 @@ function verificaTruthy(x) {
   }
 }
 
+//ou 
+
+function isTruthy(dado){
+  return !!dado;
+}
+
 //Questão 2)
 function retornaPerimetro(lado) {
   return (lado+lado+lado+lado)
@@ -186,6 +192,10 @@ function retornaPerimetro(lado) {
 //Questão 3) ???
 function retornaNomecompleto(nome, sobrenome) {
   return  `${nome} ${sobrenome}`;  
+}
+
+function nomeCompleto(nome, sobrenome) {
+  return  nome + " " + sobrenome;  
 }
 
 //Questão 4)
@@ -208,6 +218,18 @@ function retornatipo(x){
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
- addEventListener('scroll', function retornaNomecompleto() {
-   return console.log(retornaNomecompleto('iago', 'santos'))
-});
+addEventListener('scroll', function() {
+  return console.log(retornaNomecompleto('iago', 'alexandre'))
+ });
+
+//questão 7) Corrija o erro
+// var totalPaises = 193;
+// function precisoVisitar(paisesVisitados) {
+//   return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+// }
+// function jaVisitei(paisesVisitados) {
+//   return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+// }
+// precisoVisitar(20);
+// jaVisitei(20);
+
