@@ -8,8 +8,8 @@ var pessoa = {
   possuiFaculdade: true,
 }
 
-pessoa.nome; // 'André'
-pessoa.possuiFaculdade; // true
+// pessoa.nome;  'André'
+// pessoa.possuiFaculdade;  true
 
 // Propriedades e métodos consistem em nome (chave) e valor
 
@@ -82,8 +82,8 @@ var menu = {
   backgroundColor: '#84E',
 }
 
-menu.backgroundColor = '#000';
-console.log(menu.backgroundColor); // '#000'
+// menu.backgroundColor = '#000';
+// console.log(menu.backgroundColor);  '#000'
 
 // ADICIONAR PROPRIEDADES E MÉTODOS
 // Basta adicionar um novo nome e definir o valor.
@@ -173,3 +173,89 @@ var cachorro = {
     }
   },
 }
+
+// TUDO É OBJETO
+
+// Strings, Números, Boolean, Objetos e mais, possuem propriedades e métodos. Por isso são objetos.
+
+var nome = 'André';
+
+ nome.length; // 5
+ nome.charAt(1); // 'n'
+ nome.replace('ré', 'rei'); // 'Andrei'
+ nome; // 'André'
+
+// Uma string herda propriedades e métodos do construtor String()
+
+// NÚMEROS
+
+var altura = 1.8;
+
+altura.toString(); // '1.8'
+altura.toFixed(); // '2'
+
+// Por um breve momento o número é envolvido em um Objeto (coerção), tendo acesso assim as suas propriedades e métodos
+
+// FUNÇÕES
+
+function areaQuadrado(lado) {
+  return lado * lado;
+}
+
+areaQuadrado.toString();
+//"function areaQuadrado(lado) {
+//  return lado * lado;
+//}"
+
+areaQuadrado.length; // 1 - quantidade de argumentos da função
+
+// ELEMENTOS DO DOM
+
+var btn = document.querySelector('.btn');
+
+btn.classList.add('azul') // adiciona a classe azul
+btn.innerText; // 'Clique'
+btn.addEventListener('click', function() {
+  console.log('Clicou')
+})
+
+// Praticamente todos os efeitos com JS são feitos utilizando propriedades e métodos de objetos do DOM.
+
+// OBJETOS REVOLUCIONARAM A PROGRAMAÇÃO
+
+// Web API's são métodos e propriedades que permitem a interação JavaScript e Browser.
+
+// nomeie 3 propriedades ou métodos de strings
+var nome = 'Iago';
+// nome.charAt
+// nome.charCodeAt
+// nome.codePointAt
+
+// nomeie 5 propriedades ou métodos de elementos do DOM
+
+var btn = document.querySelector('.btn');
+// btn.addEventListener
+// btn.appendChild
+// btn.animate
+// btn.checkVisibility
+// btn.id
+
+// busque na web um objeto (método) capaz de interagir com o clipboard, 
+// clipboard é a parte do seu computador que lida com o CTRL + C e CTRL + V
+
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+
+
