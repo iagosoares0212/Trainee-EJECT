@@ -132,27 +132,28 @@ console.log(ano); // 2019
   const marca = 'Fiat';
   let portas = 4;
 }
-console.log(var, marca, portas);
+// console.log(var, marca, portas);
+console.log(cor)
 
-// O primeiro erro é que não se pode imprimir o nome "var" pois é uma palavra guardada para a declaração de variáveis. O segundo erro é que a constante "marca" só pode ser acessada dentro do bloco, assim como a variável "portas".
-
-//O código abaixo retorna com erros pois const
+// O primeiro erro é que não se pode imprimir o nome "var" pois é uma palavra reservada para a declaração de variáveis. O segundo erro é que a constante "marca" só pode ser acessada dentro do bloco, assim como a variável "portas".
 
 // Como corrigir o erro abaixo?
+
+const dois = 2;
+
 function somarDois(x) {
-  const dois = 2;
   return x + dois;
 }
 function dividirDois(x) {
-  return x + dois;
+  return x/dois;
 }
-somarDois(4);
-dividirDois(6);
+console.log(somarDois(4));
+console.log(dividirDois(6));
 
 // O que fazer para total retornar 500?
-var numero = 50;
+const numero = 50;
 
-for(var numero = 0; numero < 10; numero++) {
+for(let numero = 1; numero < 10; numero++) {
   console.log(numero);
 }
 
