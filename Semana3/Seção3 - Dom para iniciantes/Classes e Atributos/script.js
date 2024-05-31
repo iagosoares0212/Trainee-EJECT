@@ -21,8 +21,8 @@ menu.className += ' vermelho'
 
 const animais = document.querySelector('.animais');
 
-console.log(animais.attributes); // retorna todos os atributos
-console.log(animais.attributes[1]); // retorna o primeiro atributo
+// console.log(animais.attributes); // retorna todos os atributos
+// console.log(animais.attributes[1]); // retorna o primeiro atributo
 
 // GETATTRIBUTE E SETATTRIBUTE
 
@@ -52,3 +52,19 @@ animais1.className += ' vermelho'; // adiciona vermelho à string
 animais1.attributes = 'class="ativo"'; // não funciona, read-only
 
 // Lembre-se que podemos modificar o valor de uma propriedade objeto.propriedade = ''
+
+// EXERCÍCIO
+
+// 1) Adicione a classe ativo a todos os itens do menu
+const ItensMenu = document.querySelectorAll('.menu a')
+ItensMenu.forEach((item) => {
+    item.classList.add('ativo')
+})
+
+// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+
+
+// Verifique se as imagens possuem o atributo alt
+
+// Modifique o href do link externo no menu
+
