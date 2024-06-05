@@ -49,9 +49,9 @@ window.outerHeight; // soma a barra de endereço
 window.pageYOffset; // distância total do scroll vertical
 window.pageXOffset; // distância total do scroll horizontal
 
-if(window.innerWidth < 600) {
-  console.log('Tela menor que 600px');
-}
+// if(window.innerWidth < 600) {
+//   console.log('Tela menor que 600px');
+// }
 
 // MATCHMEDIA();
 
@@ -78,34 +78,69 @@ const small = window.matchMedia('(max-width: 600px)');
 // 1) Verifique a distância da primeira imagem
 // em relação ao topo da página
     const primeiraImg = document.querySelector('img')
-    const rect1 = primeiraImg.getBoundingClientRect()
-    const dTop = rect1.top
-// Retorne a soma da largura de todas as imagens
-    const imagens = document.querySelectorAll('img')
-    let soma = 0;
-    imagens.forEach((item) => {
-        soma += item.getBoundingClientRect().width;
-    });
-// Verifique se os links da página possuem
+    const dTop = primeiraImg.offsetTop
+// 2) Retorne a soma da largura de todas as imagens
+    // const imagens = document.querySelectorAll('img')
+    // let soma = 0;
+    // imagens.forEach((item) => {
+    //     soma += item.getBoundingClientRect().width;
+    // });
+
+    function somaImagens(){
+        const imagens = document.querySelectorAll('img')
+        let soma = 0;
+        imagens.forEach((item) => {
+            soma += item.offsetWidth
+        });
+        // console.log(soma)
+    }
+
+    window.onload = function () {
+        somaImagens();
+    }
+
+// 3) Verifique se os links da página possuem
 // o mínimo recomendado para telas utilizadas
 // com o dedo. (48px/48px de acordo com o google)
+
+    // const links = document.querySelectorAll('a')
+    // links.forEach((item) => {
+    //     if(item.getBoundingClientRect().width >= 48 && item.getBoundingClientRect().height >= 48){
+    //         // console.log('está dentro do recomendado')
+    //     } else {
+    //         // console.log('Não está dentro do recomendado')
+    //     }
+    // });
+
     const links = document.querySelectorAll('a')
-    links.forEach((item) => {
-        if(item.getBoundingClientRect().width <= 48 && item.getBoundingClientRect().height <= 48){
-            // console.log('está dentro do recomendado')
+
+    links.forEach((link) => {
+        const linkWidth = link.offsetWidth;
+        const linkHeight = link.offsetHeight
+        if (linkWidth >= 48 && linkHeight >= 48){
+            // console.log(link, 'Possui boa acessibilidade');
         } else {
-            // console.log('Não está dentro do recomendado')
+            // console.log(link, 'Não possui boa acessibilidade');
         }
-    });
+    })
+
 
 // Se o browser for menor que 720px,
 // adicione a classe menu-mobile ao menu
-    const tela = window.matchMedia('(max-width: 720px)');
-    const menu = document.querySelector('.menu');
-    if(tela.matches){
-        menu.classList.add('menu-mobile')
-    } else {
+    // const tela = window.matchMedia('(max-width: 720px)');
+    // const menu = document.querySelector('.menu');
+    // if(tela.matches){
+    //     menu.classList.add('menu-mobile')
+    // } else {
+        
+    // }
 
+
+    const browserSmall = window.matchMedia('(max-width: 720px)').matches;
+
+    if(browserSmall) {
+        const menu = document.querySelector('.menu');
+        menu.classList.add('menu-mobile');
     }
 
 
