@@ -69,5 +69,54 @@ novoH1.classList.add('titulo');
 
 animais.appendChild(novoH1);
 
+// CLONAR ELEMENTOS
+
+// Todo elemento selecionado é único. Para criarmos um novo elemento baseado no anterior, é necessário utilizar o método cloneNode()
+
+const titulo1 = document.querySelector('h1');
+const titulo2 = document.querySelector('h1');
+const novoTitulo = titulo;
+// titulo, titulo2 e novoTitulo são iguais
+
+const cloneTitulo = titulo1.cloneNode(true);
+const contato1 = document.querySelector('.contato');
+contato1.appendChild(cloneTitulo);
+
+// true sinaliza para incluir os filhos
+
+// EXERCÍCIO
+
+// Duplique o menu e adicione ele em copy
+
+const menu = document.querySelector('.menu');
+const cloneMenu = menu.cloneNode(true);
+const copy = document.querySelector('.copy');
+copy.appendChild(cloneMenu);
+
+// Selecione o primeiro DT da dl de Faq
+
+// const faqLista = document.querySelector('.faq-lista')
+// const primeiroDT = faqLista.children[0]
+
+const faq = document.querySelector('.faq');
+const primeiroDt = faq.querySelector('dt');
+
+// Selecione o DD referente ao primeiro DT
+
+// const primeiroDD = faqLista.children[1]
+
+const proximoDD = primeiroDt.nextElementSibling;
+
+// Substitua o conteúdo html de .faq pelo de .animais
+
+const animais1 = document.querySelector('.animais')
+
+faq.innerHTML = animais.innerHTML
+
+
+
+
+
+
 
 
