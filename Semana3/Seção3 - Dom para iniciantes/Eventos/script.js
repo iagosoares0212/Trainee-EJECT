@@ -130,7 +130,7 @@ const imgs = document.querySelectorAll('img');
 
 function imgSrc(event) {
   const src = event.currentTarget.getAttribute('src');
-  console.log(src);
+  // console.log(src);
 }
 
 imgs.forEach((img) => {
@@ -146,32 +146,55 @@ imgs.forEach((img) => {
 const linksInternos = document.querySelectorAll('a[href^="#"]')
 
 function callback1(event){
-    
+  event.preventDefault()
+  linksInternos.forEach((item) => {
+    item.classList.remove('ativo')
+  });
+  event.currentTarget.classList.add('ativo'); // ou this.classList.add('ativo')
 }
 
 linksInternos.forEach((item) => {
-    item.addEventListener('click', callback1);
+  item.addEventListener('click', callback1);
 })
 
-
-// Selecione todos os elementos do site começando a partir do body,
+// 2) Selecione todos os elementos do site começando a partir do body,
 // ao clique mostre exatamente quais elementos estão sendo clicados
 
+// const elementos = document.querySelectorAll('body *')
 
-// Utilizando o código anterior, ao invés de mostrar no console,
+// function callback2(event){
+//   console.log(event.currentTarget)
+//   event.stopPropagation();
+// }
+
+// elementos.forEach((elemento) => {
+//   elemento.addEventListener('click', callback2);
+// })
+
+
+// 3) Utilizando o código anterior, ao invés de mostrar no console,
 // remova o elemento que está sendo clicado, o método remove() remove um elemento
 
+// const elementos = document.querySelectorAll('body *')
+
+// function callback3(event){
+//   event.currentTarget.remove()
+//   event.stopPropagation();
+// }
+
+// elementos.forEach((elemento) => {
+//   elemento.addEventListener('click', callback3);
+// })
 
 // Se o usuário clicar na tecla (t), aumente todo o texto do site. 
 
+// const elementos = document.querySelectorAll('body *')
 
-  
-// const img2 = document.querySelector('img');
-
-// function callback(event) {
-// //   console.log(event);
+// function callback4(event) {
+//   if(event.key === 't')
+//     document.documentElement.classList.toggle('textomaior')
 // }
 
-// img2.addEventListener('click', callback);
+// window.addEventListener('keydown', callback4);
 
-// // Geralmente utilizam e como nome do parâmetro
+
