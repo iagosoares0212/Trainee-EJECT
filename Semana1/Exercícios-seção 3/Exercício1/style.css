@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+nav {
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 2.18rem;
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin-bottom: 80px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    background: white;
+    padding: 20px 30px;
+    color: #000;
+    border-radius: 4px;
+}
+
+.menu li a:hover{
+    border:2px solid red
+
+}
+
+.bikcraft {
+    width: 50%;
+    object-fit: cover;
+}
+    
+
+main {
+    background: #f7f7f7;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+}
+
+.parte1{
+    display: flex;
+    position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
+}
+
+.bicicletas-feitas-a-mao {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    background: white;
+    justify-content: center;
+    width: 50%;
+    padding: 0px 20px;
+    position: relative; /* Necessário para que o posicionamento absoluto do pseudo-elemento funcione */
+}
+
+.bicicletas-feitas-a-mao h2{
+    font-size: 2rem;
+}
+
+.bicicletas-feitas-a-mao::before {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 4px;
+    background-color: #ee2211; 
+    position: absolute;
+    top: 20px;
+    right: -25px;
+}
+
+
+.bicicletas-feitas-a-mao p {
+    font-size: 1.25rem;
+    text-align: end;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+/*Top Right Bottom Left*/
+
+h2 {
+    margin: 0;
+}
+
+.bicicletas-feitas-a-mao a{
+    text-decoration: none;
+    background: #ee2211;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+}
+
+.bicicletas-feitas-a-mao a:hover {
+    background-color: #900;
+}
+
+.parte2{
+    display: flex;
+    margin: 0 0 70px 0;
+}
+
+.vantagens-bikcraft1 {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.vantagens-bikcraft1 h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    background-image: url(./assets/onda.svg);
+    background-position: center;
+}
+
+.vantagens-bikecraft2 {
+    box-sizing: border-box;
+    background: white;
+    width: 50%;
+    padding: 50px 50px;
+    
+}
+
+.item-vantagens-bikecraft2{
+    padding: 10px;
+}
+
+.vantagens-bikecraft2 .item-vantagens-bikecraft2:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+.item-vantagens-bikecraft2:hover {
+    border-left: 4px solid red;
+}
+
+.vantagens-bikecraft2 h3 {
+    display: inline;
+    margin: 0 20px;
+}
+
+.titulo {
+    display: flex;
+    gap: 2px;
+}
+
+.vantagens-bikecraft2 p {
+    margin-left:50px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer p {
+    width: auto;
+}
+
+@media (max-width: 1250px){
+    .parte2 {
+        flex-direction: column;
+    }
+
+    .vantagens-bikcraft1 {
+        align-self: center;
+    }
+
+    .conteudo-principal {
+        margin:auto;
+        align-items: normal;
+    }
+
+    .vantagens-bikcraft1 {
+        width: auto;
+    }
+
+    .vantagens-bikecraft2 {
+        width: auto;
+    }
+
+    .vantagens-bikcraft1 h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+
+    h1 {
+       margin: 10px; 
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .menu {
+        width: auto;
+        flex-wrap: wrap;
+        gap: 55px;
+        justify-content: center;
+    }
+
+    .parte1 {
+        flex-direction: column;
+    }
+
+    .bicicletas-feitas-a-mao {
+        width: auto;
+        padding: 50px;
+        align-items: flex-start;
+    }
+
+    .bicicletas-feitas-a-mao::before {
+        display: none;
+    }
+
+    .bicicletas-feitas-a-mao p {
+        text-align: left;
+    }
+
+    .bikcraft {
+        width: auto;
+    }
+
+    .vantagens-bikcraft1 h2 {
+        font-size: 3.5rem;
+    }
+ 
+}
+
+@media (max-width: 500px){
+    
+    .vantagens-bikcraft1 h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
