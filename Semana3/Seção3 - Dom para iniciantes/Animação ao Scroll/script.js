@@ -26,12 +26,12 @@ function initAccordion() {
   const activeClass = 'ativo';
 
   if(accordionList.length) {
-    accordionList[0].classList.add('activeClass');
-    accordionList[0].nextElementSibling.classList.add('activeClass');
+    accordionList[0].classList.add(activeClass);
+    accordionList[0].nextElementSibling.classList.add(activeClass);
     
     function activeAccordion () {
-      this.classList.toggle('activeClass');
-      this.nextElementSibling.classList.toggle('activeClass');
+      this.classList.toggle(activeClass);
+      this.nextElementSibling.classList.toggle(activeClass);
     }
     
     accordionList.forEach((item) => {
@@ -68,10 +68,26 @@ function initScrollSuave() {
 }
 initScrollSuave();
 
-const sections = document.querySelectorAll('.js-scroll');
-
-function animaScroll() {
-  console.log('Sim')
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll('.js-scroll');
+  if(sections.length){
+    const windowMetade = window.innerHeight * 0.6;
+  
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = (sectionTop - windowMetade) < 0;
+        if(isSectionVisible) 
+          section.classList.add('ativo');
+        else 
+          section.classList.remove('ativo');
+      })
+    }
+    
+    animaScroll();
+    
+    window.addEventListener('scroll', animaScroll)
+  }
 }
 
-window.addEventListener('scroll', animaScroll)
+initAnimacaoScroll ();
