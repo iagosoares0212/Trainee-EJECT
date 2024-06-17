@@ -1,11 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     font-family: Montserrat;
 }
 
-header {
+nav {
     background:#06121E;
     display: flex;
     justify-content:space-around;
@@ -13,14 +12,46 @@ header {
     padding: 20px 0;
 }
 
-header ul {
+nav ul {
     display: flex;
     gap: 40px;
     list-style-type: none;
 }
 
-header ul li a{
+nav ul li a{
     text-decoration: none;
     color:#FFFFFF;
 }
 
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-mobile div {
+    width: 40px;
+    height: 5px;
+    background: #FFFFFF;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 750px) {
+
+    nav ul {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background:#06121E;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .menu-mobile {
+        display: block;
+    }
+}
