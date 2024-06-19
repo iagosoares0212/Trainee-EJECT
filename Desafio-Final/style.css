@@ -7,9 +7,9 @@
 nav {
     background: #333333;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 160px;
 }
 
 nav ul {
@@ -23,21 +23,86 @@ nav ul li a{
     color:#FFFFFF;
 }
 
-.menu-mobile {
-    display: none;
-    cursor: pointer;
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 60px 160px;
+    background-image: url(./assets/background-banner.png);
+    gap: 150px;
 }
 
-.menu-mobile div {
-    width: 40px;
-    height: 5px;
-    background: #FFFFFF;
-    margin: 6px;
-    border-radius: 10px;
+.banner h1 {
+    /* ajeitar disposição do conteúdo do texto */
+    color: #F2F2F2;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.banner h1 span {
+    display: inline-block;
+    border-bottom: 4px solid #FF5733; 
+}
+
+.Sobre {
+    margin: 80px;
+}
+
+.Sobre h1{
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.descricao-sobre {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    color: #333333;
+}
+
+.nossa-equipe h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.nossa-equipe-cards{
+    display: flex;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.card {
+    /* margin: top right bottom left; */
+    background: #D9D9D9;
+    padding: 40px 40px 60px 40px;
+    border-radius: 5px;
+}
+
+.top-card {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.top-card1 {
+   
 }
 
 
-@media (max-width: 750px) {
 
 
-}
+
+
+
+
+
+
+
+
