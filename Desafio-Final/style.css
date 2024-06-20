@@ -210,6 +210,67 @@ nav ul li a{
     font-weight: bold;
 }
 
+.servicos {
+    background: #121212;
+    padding: 80px;
+}
+
+.servicos h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.textos-servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; 
+    margin-bottom: 80px;
+}
+
+.textos-servicos p {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.carrossel {
+    width: auto;
+}
+
+.contato {
+    padding: 80px;
+}
+
+.contato h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #333333;
+}
+
+.container-contato {
+    display: flex;
+}
+
+.contaier-parte1 {
+    background: black;
+    margin-top: 32px;
+    padding: 40px;
+}
+
+.contaier-parte1 h3 {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.015em;
+    color: #F2F2F2;
+}
 
 
 
