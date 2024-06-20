@@ -80,7 +80,7 @@ nav ul li a{
 
 .card {
     /* margin: top right bottom left; */
-    background: #D9D9D9;
+    background: #F2F2F2;
     padding: 40px 40px 60px 40px;
     border-radius: 5px;
 }
@@ -89,11 +89,135 @@ nav ul li a{
     display: flex;
     justify-content: start;
     gap: 20px;
+    position: relative;
+    margin-bottom: 23px;
 }
 
-.top-card1 {
-   
+.top-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    left: 100%;
+    background: #FF5733;
+    border-radius: 1px;
+ }
+
+.top-card2 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: #333333;
+    margin-bottom: 5px;
 }
+
+.top-card2 p {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px; 
+    color:#C4C4C4;
+}
+
+.descricao-card {
+    position: relative;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #666666;
+}
+
+.descricao-card::before {
+    /* mudar todas as unidades de width para (vw) e height para (vh) */
+    content: "";
+    position: absolute;
+    width: 19.79vw;
+    height: 2px;
+    bottom: 100%;
+    border-radius: 2px;
+    background: #F0EEEE;
+}
+
+/* .descricao-card::after {
+    /* revisar esse pseudo element */
+    /* content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: 100%;
+    border-radius: 2px;
+    background: #F0EEEE; */
+
+.historia-empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 32px;
+}
+
+.historia-empresa p {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333333;
+}
+
+.Nossa-Visao {
+     margin-bottom: 32px;
+}
+
+.subtitulo-sobre {
+    color: #333333;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.015em;
+    margin-bottom: 12px;
+}
+
+.paragrafo-sobre {
+    /* margin: top right bottom left; */
+    background: #F0EEEE;
+    font-family: Lato;
+    padding: 13px 130px 13px 39px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.paragrafo-sobre::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    background: #FF5733;
+    left: 30px;
+    top: 20px;
+}
+
+.Nossos-Valores {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.paragrafo-sobre span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 
 
 
