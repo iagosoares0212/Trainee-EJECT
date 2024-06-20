@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -103,12 +103,55 @@
             <div class="container-contato">
                 <div class="contaier-parte1">
                     <h3>FALE CONOSCO</h3>
-                    <p>Entre em contato e descubra como a Digital Surge pode transformar seu negócio com soluções digitais inovadoras. Nossa equipe de especialistas está pronta para entender suas necessidades e oferecer as melhores estratégias para impulsionar seu sucesso. Não perca a oportunidade de levar sua empresa ao próximo nível com a nossa ajuda!</p>
+                    <p class="descricao-container-parte1">Entre em contato e descubra como a Digital Surge pode transformar seu negócio com soluções digitais inovadoras. Nossa equipe de especialistas está pronta para entender suas necessidades e oferecer as melhores estratégias para impulsionar seu sucesso. Não perca a oportunidade de levar sua empresa ao próximo nível com a nossa ajuda!</p>
                     <h4>ONDE NOS ENCONTRAR:</h4>
-                    <p>Rua Dr. Besouro, 1997 - Cidade Alta / Natal - RN</p>
+                    <div class="container-endereco">
+                        <img src="./assets/local.png">
+                        <p>Rua Dr. Besouro, 1997 - Cidade Alta / Natal - RN</p>
+                    </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15878.180418304753!2d-35.216412840699995!3d-5.7783847956753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua%20Dr.%20Besouro%2C%201997%20-%20Cidade%20Alta%20%2F%20Natal%20-%20RN!5e0!3m2!1spt-BR!2sbr!4v1718896051678!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="contaier-parte2"></div>
+                <div class="contaier-parte2">
+                    <h4>PREENCHA ABAIXO</h4>
+                    <form action="">
+
+                        <div class="form-parte1">
+
+                            <div class="container1-form-parte1">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" class="input-padrao" required>
+                            </div>
+
+                            <div class="container1-form-parte1">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" id="sobrenome" class="input-padrao" required>
+                            </div>
+
+                        </div>
+
+                        <div class="form-parte1">
+
+                            <div class="container1-form-parte1">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="input-padrao">
+                            </div>
+
+                            <div class="container1-form-parte1">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" class="input-padrao" required placeholder="(00) 99999-9999">
+                            </div>
+
+                        </div>
+
+                        <div class="form-parte2">
+                            <label for="mensagem">Sua Mensagem</label>
+                            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                        </div>
+
+                        <label class="checkbox"><input type="checkbox" checked>Li e concordo com os Termos & Condições.</label>
+
+                    </form>
+                </div>
             </div>
         </div>
     </main>

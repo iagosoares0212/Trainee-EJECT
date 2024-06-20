@@ -1,0 +1,20 @@
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 60px 160px;
+    background-image: url(/Desafio-Final/assets/background-banner.png);
+    gap: 150px;
+}
+
+.banner h1 {
+    /* ajeitar disposição do conteúdo do texto */
+    color: #F2F2F2;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.banner h1 span {
+    display: inline-block;
+    border-bottom: 4px solid #FF5733; 
+}
