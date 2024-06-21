@@ -11,7 +11,6 @@
 }
 
 .descricao-sobre {
-    font-family: Lato;
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
@@ -69,7 +68,6 @@
 
 .top-card2 p {
     text-transform: uppercase;
-    font-family: Lato;
     font-size: 12px;
     font-weight: 600;
     line-height: 16px; 
@@ -78,11 +76,9 @@
 
 .descricao-card {
     position: relative;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 500;
     line-height: 32px;
     color: #666666;
+    padding: 10px 0;
 }
 
 .descricao-card::before {
@@ -96,15 +92,16 @@
     background: #F0EEEE;
 }
 
-/* .descricao-card::after {
-    /* revisar esse pseudo element */
-    /* content: "";
+ .descricao-card::after {
+    content: "";
     position: absolute;
-    width: 100px;
+    width: 12vw;
     height: 2px;
     top: 100%;
+    left: 80px;
     border-radius: 2px;
-    background: #F0EEEE; */
+    background: #F0EEEE;
+ } 
 
 .historia-empresa {
     display: flex;
@@ -113,21 +110,11 @@
     margin-bottom: 32px;
 }
 
-.historia-empresa p {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #333333;
-}
-
 .Nossa-Visao {
      margin-bottom: 32px;
 }
 
 .subtitulo-sobre {
-    color: #333333;
-    font-family: Lato;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
@@ -138,7 +125,6 @@
 .paragrafo-sobre {
     /* margin: top right bottom left; */
     background: #F0EEEE;
-    font-family: Lato;
     padding: 13px 130px 13px 39px;
     border-radius: 5px;
     position: relative;

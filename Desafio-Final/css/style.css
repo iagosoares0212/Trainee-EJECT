@@ -11,16 +11,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+p {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333333
+}
 
+body {
+    margin-top: 95px; 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* corrigir os outros arquivos em css, depois de sobre em relação ao p */
