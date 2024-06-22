@@ -26,6 +26,38 @@
     color: #FFFFFF;
 }
 
-.carrossel {
-    width: auto;
+.slide {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.card-image {
+    position: relative;
+    width: 509px;
+    height: 452px;
+    border-radius: 5px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: relative; 
+}
+
+.overlay h2 {
+    position: absolute;
+    bottom: 5px; 
+    color: white;
+    padding: 10px 50px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
