@@ -4,6 +4,7 @@
 @import url(./servicos.css);
 @import url(./contato.css);
 @import url(./footer.css);
+@import url(./swiper-bundle.min.css);
 
 * {
     margin: 0;

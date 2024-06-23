@@ -1,6 +1,7 @@
 .servicos {
     background: #121212;
     padding: 80px;
+    overflow-x: hidden;
 }
 
 .servicos h2 {
@@ -26,15 +27,8 @@
     color: #FFFFFF;
 }
 
-.slide {
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .card-image {
-    position: relative;
+    position: relative; 
     width: 509px;
     height: 452px;
     border-radius: 5px;
@@ -47,17 +41,23 @@
     border-radius: 5px;
 }
 
-.overlay {
-    position: relative; 
+.card-image h2 {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-family: Poppins;
+    font-size: 32px;
+    line-height: 40px;
+    color:#F2F2F2;
+    border-radius: 5px; 
+    text-align: center; 
+    width: 90%; 
 }
 
-.overlay h2 {
-    position: absolute;
-    bottom: 5px; 
-    color: white;
-    padding: 10px 50px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
+.swiper {
+    width: 1430px;
+    height: 452px;
+    --swiper-navigation-color: #fff;
 }
 
