@@ -1,5 +1,4 @@
 export default function iniciarCarrossel (){
-    console.log('oi')
 }
 
 const swiper = new Swiper('.swiper', {

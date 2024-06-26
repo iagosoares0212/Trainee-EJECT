@@ -32,6 +32,7 @@
     width: 509px;
     height: 452px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .card-image .card-img {
