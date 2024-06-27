@@ -149,3 +149,33 @@
 .paragrafo-sobre span {
     font-weight: bold;
 }
+
+@media (max-width: 360px) {
+
+    .Sobre {
+        margin: 24px;
+    }
+
+    .nossa-equipe-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Sobre h1{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    .descricao-sobre {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .nossa-equipe h2 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}

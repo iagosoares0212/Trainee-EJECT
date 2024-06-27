@@ -116,3 +116,50 @@ footer h2 {
   text-decoration: none;
   color:#C4C4C4;
 }
+
+@media (max-width: 360px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .footer-parte1,
+  .footer-parte2,
+  .footer-parte3 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-copyright {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .footer-parte2-bloco1::after,
+  .footer-parte2-bloco2::after {
+    width: 20vw;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer h2 {
+    font-size: 18px;
+  }
+
+  .footer-parte2 p, 
+  .footer-parte1 p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .social-icon {
+    font-size: 24px;
+  }
+}
+

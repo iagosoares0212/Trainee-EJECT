@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 60px 160px;
-    background-image: url(/Desafio-Final/assets/background-banner.png);
+    background-image: url(/Desafio-Final/imgs/background-banner.png);
     gap: 150px;
 }
 
@@ -18,3 +18,30 @@
     display: inline-block;
     border-bottom: 4px solid #FF5733; 
 }
+
+
+@media (max-width: 360px) {
+
+    /* ajeitar dimensão da imagem para se adaptar ao tamanho da tela */
+
+    .banner {
+        flex-direction: column;
+        gap: 16px;
+        width: 100vw;
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 20px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+

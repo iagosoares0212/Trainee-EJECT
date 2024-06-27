@@ -179,3 +179,18 @@ form textarea {
     cursor: pointer;
 }
 
+@media (max-width: 360px) {
+    .container-contato {
+        flex-direction: column;
+    }
+
+    .mapa-container-parte1 {
+        display: none;
+    }
+
+    .form-parte1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
