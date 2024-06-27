@@ -16,18 +16,21 @@
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% do topo e centralizado */
-    padding: 20px;
+    padding: 70px;
     border: 1px solid #888;
-    width: 80%; /* Largura */
-    max-width: 600px; /* Largura máxima */
+    max-width: 1280px; /* Largura máxima */
+    position: relative; /* Adicione esta linha */
 }
 
 /* Estilo do botão de fechar */
 .close {
-    color: #aaa;
+    color: #FF5733;
     float: right;
     font-size: 28px;
-    font-weight: bold;
+    font-weight:500; /* Alterar para 'normal' ou um valor mais baixo */
+    position: absolute; /* Posição absoluta */
+    top: 40px; /* Ajuste a distância do topo conforme necessário */
+    right: 40px; /* Ajuste a distância da direita conforme necessário */
 }
 
 .close:hover,
@@ -35,4 +38,8 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-content p{
+    margin-bottom: 40px;
 }
