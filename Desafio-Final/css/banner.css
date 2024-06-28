@@ -19,6 +19,21 @@
     border-bottom: 4px solid #FF5733; 
 }
 
+@media  (max-width: 1595px) {
+
+    .banner {
+        gap: 50px;
+    }
+
+    .banner img {
+        width: 500px;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+    
+}
 
 @media (max-width: 360px) {
 

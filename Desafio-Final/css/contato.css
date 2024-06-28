@@ -1,9 +1,13 @@
 .contato {
     padding: 80px;
     background: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contato h2 {
+    /* ajeitar posicionamento */
     font-size: 48px;
     font-weight: 700;
     line-height: 52px;
@@ -19,7 +23,7 @@
     margin-top: 32px;
     padding: 40px;
     border-radius: 5px 0 0 5px;
-    width: 40%;
+    width: 700px;
 }
 
 .contaier-parte1 h3 {
@@ -73,7 +77,6 @@ iframe {
     margin-top: 32px;
     padding: 32px 40px 0 40px;
     background: #F2F2F2;
-    width: 60%;
 }
 
 .contaier-parte2 h4 {
@@ -246,5 +249,7 @@ form textarea {
         padding: 5px 10px 30px 10px ;
         font-size: 12px;
     }
+
+
 }
 

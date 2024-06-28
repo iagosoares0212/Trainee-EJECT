@@ -64,6 +64,9 @@
 
 @media (max-width: 360px) {
 
+
+    /* fazer responsividade do slider */
+    
     .servicos {
         padding: 20px;
     }

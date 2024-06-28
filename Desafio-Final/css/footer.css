@@ -6,7 +6,7 @@ footer {
   /* margin: top right bottom left; */
   padding: 60px 60px 60px 160px;
   display: flex;
-  gap: 60px;
+  gap: 160px;
 }
 
 .texto-copyright {
