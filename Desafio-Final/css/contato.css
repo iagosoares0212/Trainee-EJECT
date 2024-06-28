@@ -180,8 +180,34 @@ form textarea {
 }
 
 @media (max-width: 360px) {
+
+    .contato {
+        padding: 20px 20px;
+    }
+
+    .contato h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
     .container-contato {
         flex-direction: column;
+    }
+
+    .contaier-parte1 {
+        margin-top: 10px;
+        width: auto;
+        padding: 20px 25px;
+    }
+
+    .contaier-parte1 h3{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .descricao-container-parte1 {
+        margin: 10px 0;
+        font-size: 14px;
     }
 
     .mapa-container-parte1 {
@@ -191,6 +217,34 @@ form textarea {
     .form-parte1 {
         flex-direction: column;
         gap: 5px;
+    }
+
+    .contaier-parte2 {
+        width: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .contaier-parte2 h4 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    form input {
+        height: 24px;
+        width: auto;
+    }
+
+    .enviar {
+        /* margin: top right bottom left; */
+        margin-top: 10px;
+        padding: 5px 10px 30px 10px ;
+        font-size: 12px;
     }
 }
 

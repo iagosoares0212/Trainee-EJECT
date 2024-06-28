@@ -62,3 +62,24 @@
     --swiper-navigation-color: #fff;
 }
 
+@media (max-width: 360px) {
+
+    .servicos {
+        padding: 20px;
+    }
+
+    .servicos h2 {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .textos-servicos {
+        margin-bottom: 20px;
+    }
+    
+    .textos-servicos p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

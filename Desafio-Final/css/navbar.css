@@ -29,6 +29,7 @@ nav ul li a{
     nav {
         padding: 10px 30px;
         gap: 60px;
+        justify-content: flex-start;
     }
 
     nav ul {

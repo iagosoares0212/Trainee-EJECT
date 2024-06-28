@@ -166,16 +166,80 @@
         line-height: 32px;
         font-weight: 700;
         color: #333333;
+        margin-bottom: 10px;
     }
 
     .descricao-sobre {
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
+        margin-bottom: 10px;
     }
 
     .nossa-equipe h2 {
         font-size: 14px;
-        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nossa-equipe-cards {
+        margin-bottom: 20px;
+    }
+
+    .carde {
+        padding: 30px;
+    }
+
+    .top-card1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .top-card2 h3 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .top-card2 p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .top-card2 img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .descricao-card {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0px;
+    }
+
+    .historia-empresa {
+        margin-bottom: 20px;
+    }
+
+    .historia-empresa p {
+        font-size: 14px; 
+        line-height: 20px;
+    }
+
+    .paragrafo-sobre {
+        /* top right bottom left; */
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 13px 30px 13px 39px;
+    }
+
+    .Nossa-Visao {
+        margin-bottom: 15px;
+    }
+
+    .subtitulo-sobre {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
     }
 }
